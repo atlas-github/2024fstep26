@@ -98,7 +98,7 @@ ___
    1. Need to [create](https://mail.google.com/mail/) another Google account, if you haven't already. Remember to activate [2-Step Verification](https://support.google.com/accounts/answer/185839)
    2. Refer to Sending a [Plain-Text Email](https://realpython.com/python-send-email/). Look for the code section just above the **Sending a Fancy Email** header.
    3. Register for an account on [aciqn](https://aqicn.org/api/)
-   4. Using Postman, try making an API call (documentation [here](https://aqicn.org/json-api/doc/#api-City_Feed-GetCityFeed)
+   4. Using Postman, try making an API call (documentation [here](https://aqicn.org/json-api/doc/#api-City_Feed-GetCityFeed))
       - `GET https://api.waqi.info/feed/kuala%20lumpur/?token=###INSERT TOKEN HERE###`
    5. From Postman, copy the Python code into a [Colab notebook](https://colab.research.google.com/)
    6. Tasks:
