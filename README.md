@@ -69,8 +69,8 @@ ___
        - ![image](https://github.com/atlas-github/2023fstep25/assets/50855923/3582e9e2-61d3-4925-811d-959303ffca23)
          
    2. Open [data.gov.my](https://data.gov.my/dashboard) using another tab on your browser >> API Docs
-   3. Scroll to Realtime APIs >> Flood Warning API
-   4. Try the Flood Warning API Endpoint `GET https://api.data.gov.my/flood-warning` on Postman
+   3. Scroll to Realtime APIs >> Weather API
+   4. Try the Forecast API Endpoint `GET https://api.data.gov.my/weather/forecast` on Postman
         - Look for the icon circled in the snapshot below
         - ![image](https://github.com/atlas-github/2023fstep25/assets/50855923/f68b0004-a86f-467a-8c0c-d0a5c47c09a5)
      
@@ -83,9 +83,9 @@ ___
    6. Tasks:
       - Convert json output into a dataframe using `pd.json_normalize()`
       - Store dataframe into a variable `df`
-      - Filter to include only `df[(df["water_level_indicator"] == "NORMAL")]` and today's date
-      - Output into a CSV file, then download and open in Excel and [Google My Maps](https://www.google.com/maps/d/)
-      - The nearest river to our current location is Sungai Gombak, spot which station_id is it
+      - Filter to include only `df[df['location.location_name'] == 'Langkawi']`
+      - Output into a CSV file, then download and open in Excel
+      - Now try the Transport API (GTFS-R) and output the locations of Prasarana buses on Google My Maps
       - What other questions can you answer?
       - Don't forget to try using the [Weather API](https://developer.data.gov.my/realtime-api/weather) 
 
